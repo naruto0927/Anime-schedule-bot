@@ -392,7 +392,14 @@ class ScheduleProcessor:
             sub = parse_dt(e.get("subDate") or e.get("subAiringAt") or "") if air_sub else None
             dub = parse_dt(e.get("dubDate") or e.get("dubAiringAt") or "") if air_dub else None
 
-            primary = raw or sub or dub
+            # Respect air filters priority
+            primary = None
+            if air_raw and raw:
+            primary = raw
+            elif air_sub and sub:
+            primary = sub
+            elif air_dub and dub:
+            primary = dub
             if not primary:
                 continue
 
