@@ -37,10 +37,10 @@ logging.getLogger("apscheduler").setLevel(logging.WARNING)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 # ── Environment ───────────────────────────────────────────────────────────────
-BOT_TOKEN = "7999270454:AAGoMBAG2wbfxutMGzT3CiEZMkaj-3_q5wg"
+BOT_TOKEN = "8757747471:AAF422sWh-wrt-o9Yg2e3JQ_Q3jg-UlicgU"
 API_ID = 20167916
 API_HASH = "325de70c258003ff1c30fb02077dde25"
-MONGO_URI = "mongodb://encode:encode@ac-slc7rrb-shard-00-00.rylykuo.mongodb.net:27017,ac-slc7rrb-shard-00-01.rylykuo.mongodb.net:27017,ac-slc7rrb-shard-00-02.rylykuo.mongodb.net:27017/?ssl=true&replicaSet=atlas-62yz6f-shard-0&authSource=admin&appName=Cluster0" 
+MONGO_URI = "mongodb+srv://merge:merge@cluster0.svepnrx.mongodb.net/?appName=Cluster0" 
 ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "6672752177").split(",") if x.strip()]
 TZ_NAME   = os.environ.get("TIMEZONE", "Asia/Kolkata")
 TZ        = ZoneInfo(TZ_NAME)
