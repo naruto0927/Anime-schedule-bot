@@ -2572,8 +2572,8 @@ class GeminiAI:
             "contents": contents,
             "generationConfig": {
                 "temperature": 0.85,
-                "maxOutputTokens": 800,
-                "topP": 0.95,
+                "maxOutputTokens": 2000,
+                "topP": 1.95,
             },
         }
 
